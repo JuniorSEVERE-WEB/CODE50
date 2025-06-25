@@ -1,0 +1,114 @@
+
+.header 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding: 0px 10%;
+    background-color: white;
+    z-index: 1000;
+}
+.left-section
+{
+    display: flex;
+    
+    width: auto;
+    align-items: center;
+    gap:10px;
+}
+.left-section img 
+{
+    height: 32px;
+}
+.middle-section 
+{
+    
+    display: flex;
+    align-items: center;
+}
+.middle-section ul 
+{
+    display: flex;
+    gap:30px;
+    padding: 0;
+    margin: 0;
+}
+.middle-section ul li 
+{
+    
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.right-section
+{
+    
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.right-section img
+{
+  height: 32px;
+  border-radius: 50%;
+}
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+}
+
+
+/* Version mobile */
+@media (max-width: 767px) {
+    .header {
+        padding: 0 15px;
+    }
+    
+    .middle-section {
+        display: none; /* Menu caché sur mobile */
+    }
+    
+    .right-section .username {
+        display: none; /* Nom caché sur mobile */
+    }
+    
+    .menu-icon {
+        display: block; /* Afficher l'icône menu */
+    }
+}
+
+/* Version tablette */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        padding: 0 5%;
+    }
+    
+    .middle-section ul {
+        gap: 20px; /* Réduire l'espace entre les éléments */
+    }
+    
+    .right-section .username,
+    .right-section .profil-username{
+        display: none; /* Nom caché sur tablette */
+    }
+    .right-section div 
+    {
+        display: none;
+    }
+}
+/* Desktop version (1024px and up) */
+@media (min-width: 1024px) {
+    .right-section div {
+        display: none; /* Hide the ion-icon on desktop */
+    }
+}
