@@ -1,0 +1,46 @@
+.foot-page 
+{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    font-family: Montserrat;
+    justify-content: center;
+    gap:80px;
+}
+.copyright-inscrire
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 800;
+}
+.copyright-inscrire div ul 
+{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+@media (max-width: 767px) {
+
+    .foot-page
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+    .foot-page .part1 .centre,
+    .foot-page .part2 .centre,
+    .foot-page .part3 .centre
+
+    {
+        text-align: center;
+    } 
+    .copyright-inscrire
+    {
+        flex-direction: column-reverse;
+    }
+}

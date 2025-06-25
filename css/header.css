@@ -86,29 +86,10 @@
         display: block; /* Afficher l'icône menu */
     }
 }
-
-/* Version tablette */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header {
-        padding: 0 5%;
-    }
-    
-    .middle-section ul {
-        gap: 20px; /* Réduire l'espace entre les éléments */
-    }
-    
-    .right-section .username,
-    .right-section .profil-username{
-        display: none; /* Nom caché sur tablette */
-    }
-    .right-section div 
+@media(min-width:768px)
+{
+    .right-section div
     {
         display: none;
-    }
-}
-/* Desktop version (1024px and up) */
-@media (min-width: 1024px) {
-    .right-section div {
-        display: none; /* Hide the ion-icon on desktop */
     }
 }
