@@ -32,7 +32,7 @@
         <div class="right-section">
             <img class="profil-username" src="images/junior_profil.png">
             <p class="username">Hello Junior</p>     
-            <div><ion-icon name="reorder-three-outline"></ion-icon></div>
+            <div><ion-icon class="menu-icon" name="reorder-three-outline"></ion-icon></div>
         </div>
     </div>
 
@@ -76,5 +76,14 @@
     <!--IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-----Javascript for icon-->
+    <script>
+    $(document).ready(function() {
+        $('.menu-icon').click(function() {
+            $('.middle-section').toggleClass('show-menu');
+        });
+    });
+</script>
 </body>
 </html>

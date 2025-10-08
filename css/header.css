@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.4);
     position:fixed;
     top:0;
     left:0;
@@ -85,6 +85,25 @@
     .menu-icon {
         display: block; /* Afficher l'icône menu */
     }
+    .middle-section.show-menu {
+    display: flex !important;
+    flex-direction: column; /* pour que les items soient en colonne sur mobile */
+    position: absolute;
+    top: 70px; /* juste en dessous du header */
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
+}
+
+/* Pour que les li soient en colonne */
+.middle-section.show-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
 }
 @media(min-width:768px)
 {
